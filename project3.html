@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Success Studio — Clean, modern, and responsive websites for businesses and individuals.">
+
+    <title>Success Studio | Portfolio</title>
+
+    <style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+        body {
+            background-color: #fafafa;
+            font-family: Arial;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #D4AF37;
+            font-size: 40px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            max-width: 600px;
+            margin: 15px auto;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: white;
+            border: 2px solid #D4AF37;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #D4AF37;
+        }
+
+        /* HERO */
+
+        .hero {
+            background-color: white;
+            padding: 50px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            margin-top: 15px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills h2 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .skill-card {
+            background-color: #fafafa;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+            border: 1px solid #D4AF37;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .skill-card h3 {
+           color: #D4AF37;
+       }
+
+       .skill-card p {
+           margin-bottom: 0;
+       }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h2 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .project-card {
+            background-color: #fafafa;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 550px;
+            border: 1px solid #D4AF37;
+            border-radius: 10px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card button {
+            margin-top: 10px;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .services h2 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .service-card {
+            background-color: #fafafa;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 550px;
+            border: 1px solid #D4AF37;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .service-card h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* WHY WORK WITH ME */
+
+        .why-me {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-me h2 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .reason-card {
+            background-color: #fafafa;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 550px;
+            border: 1px solid #D4AF37;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .reason-card h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            color: #D4AF37;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #D4AF37;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .contact p {
+           margin: 15px auto;
+        }
+
+       .contact a {
+           transition: 0.3s;
+       }
+
+       .contact a:hover {
+           color: #333;
+       }
+
+        .contact button {
+            margin-top: 15px;
+        }
+
+        /* BUTTONS */
+
+        button {
+           background-color: #D4AF37;
+           color: white;
+           border: none;
+           padding: 13px 24px;
+           border-radius: 8px;
+           font-weight: bold;
+           font-size: 16px;
+           cursor: pointer;
+           transition: 0.3s;
+       }
+
+       button:hover {
+           background-color: #333;
+           transform: translateY(-3px);
+           box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+       }
+
+       .project-card::before {
+           content: "PROJECT";
+           display: inline-block;
+           background-color: #D4AF37;
+           color: white;
+           padding: 5px 10px;
+           border-radius: 20px;
+           font-size: 12px;
+           font-weight: bold;
+           margin-bottom: 15px;
+       }
+
+       section {
+           scroll-margin-top: 20px;
+       }
+
+        /* MOBILE RESPONSIVENESS */
+
+      @media (max-width: 600px) {
+
+      body {
+           padding: 15px;
+      }
+
+      nav {
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      nav a {
+          display: block;
+      }
+
+      h1 {
+          font-size: 32px;
+      }
+
+      .hero h2 {
+          font-size: 24px;
+      }
+
+      .about,
+      .skills,
+      .projects,
+      .services,
+      .why-me,
+      .contact {
+          padding: 30px 15px;
+      }
+
+      .skill-card,
+      .project-card,
+      .service-card,
+      .reason-card {
+          width: auto;
+    }
+
+    p {
+          font-size: 16px;
+      }
+
+    .project-card {
+           transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+           transform: translateY(-8px) scale(1.01);
+           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    }
+
+
+    footer {
+        margin-top: 30px;
+        padding: 25px 15px;
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+   }
+
+    footer p {
+       color: white;
+       font-size: 14px;
+       margin: 5px auto;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#why-me">Why Me</a>
+    <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <h1>Hi, I'm Success</h1>
+
+        <h2>Web Designer & Developer</h2>
+
+        <p>
+            I create clean, modern, and responsive websites
+            that help businesses and individuals build a strong
+            online presence.
+        </p>
+
+        <a href="#contact">
+            <button>Let's Work Together</button>
+        </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I'm Success, a web designer and developer focused on
+            creating clean, modern, and responsive websites.
+        </p>
+
+        <p>
+            I help businesses and individuals build a professional
+            online presence with websites that are simple,
+            attractive, and easy to use.
+        </p>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-card">
+
+            <h3>HTML</h3>
+
+            <p>
+                Building clean and well-structured web pages.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>CSS</h3>
+
+            <p>
+                Creating modern layouts, designs, and responsive websites.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Web Design</h3>
+
+            <p>
+                Designing websites that look professional and are easy to use.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Success Studio Website</h3>
+
+            <p>
+                A professional business portfolio website built
+                with HTML and CSS to showcase web design services.
+            </p>
+
+            <a href="index.html">
+                <button>View Project</button>
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <h3>Business Landing Page</h3>
+
+            <p>
+                A modern landing page designed to help businesses
+                attract visitors and turn them into customers.
+            </p>
+
+            <a href="project2.html">
+                <button>View Project</button>
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+                A personal portfolio website designed to showcase
+                skills, services, and previous work.
+            </p>
+
+            <button>Current Project</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services" class="services">
+
+        <h2>My Services</h2>
+
+        <div class="service-card">
+
+            <h3>Website Design</h3>
+
+            <p>
+                I create clean, modern, and responsive websites
+                for businesses and individuals.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <h3>Landing Pages</h3>
+
+            <p>
+                I design attractive landing pages that help
+                businesses turn visitors into customers.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <h3>Portfolio Websites</h3>
+
+            <p>
+                I build professional portfolio websites that
+                showcase your skills, services, and work.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <h3>Website Management</h3>
+
+            <p>
+                I help keep websites updated, organized,
+                and looking professional.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY WORK WITH ME -->
+
+    <section id="why-me" class="why-me">
+
+        <h2>Why Work With Me?</h2>
+
+        <div class="reason-card">
+
+            <h3>Modern Designs</h3>
+
+            <p>
+                I create clean and modern websites that give
+                businesses a professional online presence.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <h3>Responsive Websites</h3>
+
+            <p>
+                I build websites that work well on phones,
+                tablets, and computers.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <h3>Easy to Use</h3>
+
+            <p>
+                I focus on creating websites that are simple,
+                clear, and easy for visitors to navigate.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Have a project in mind? I'd love to hear about it.
+            Get in touch and let's create something great together.
+        </p>
+
+        <p>
+            Email:
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Onyebuchisuccess157@gmail.com">
+                Onyebuchisuccess157@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+2348069709470">
+                +2348069709470
+            </a>
+        </p>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Onyebuchisuccess157@gmail.com">
+            <button>Contact Me</button>
+        </a>
+
+    </section>
+
+
+    <!-- BACK TO SUCCESS STUDIO -->
+
+    <a href="index.html">
+        <button>Back to Success Studio</button>
+    </a>
+
+    <a href="#home">
+    <button>Back to Top ↑</button>
+    </a>
+
+    <footer>
+    <p>© 2026 Success Studio. All rights reserved.</p>
+    <p>Web Designer & Developer</p>
+    </footer>
+
+</body>
+
+  </html>
