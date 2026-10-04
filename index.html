@@ -705,6 +705,21 @@
         box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);  
     }  
 
+    #projects {
+    padding: 30px 10px !important;
+}
+
+#projects > div {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+}
+
+#projects > div > div {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
     .popular {  
         display: inline-block;  
         background-color: #D4AF37;  
@@ -723,23 +738,69 @@
         margin: 5px 0 15px;  
     }  
 
-        /* FIX - Center Work Section */
-    #work, .work-section, #pricing, .pricing {
-        margin: 10px o 15px;
-        width: 100%;
-        max-width: 400px;
-        box-sizing: border-box;
-        border-radius: 20px;
-    }
-    .project-card {
-        margin: 10px 0 15px;
-        width: 100%;
-        max-width: 400px;
-        box-sizing: border-box;
-        display: block;
-        border-radius: 20px;
-    }
+        
 }
+
+/* ===== WORK & PROJECTS ALIGNMENT ===== */
+
+.work-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Recent Concepts */
+#projects {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Recent Concepts project grid */
+#projects > div {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual concept cards */
+#projects > div > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Main project cards */
+.project-card {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+}
+
+/* Pricing section */
+.pricing {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+/* Pricing cards */
+.price-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    }
+        
 </style>
 
 </head>  
@@ -881,6 +942,7 @@ Professional web design services to help your business stand out online.
 ‎    <a href="#contact">  
 ‎        <button>Go Premium</button>  
 ‎    </a>  
+</div>
     
 </section>  <section id="work" class="work-section">  <h2>My Work</h2>  <p class="work-intro">  
 A few examples of my web design projects and creative work.  
