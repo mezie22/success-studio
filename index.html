@@ -670,6 +670,15 @@
         text-align: center;
     }  
 
+    .price-card a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.price-card button {
+    display: block;
+    margin: 20px auto 0;
+}
     .price-card:hover {  
         transform: translateY(-8px);  
         box-shadow: 0 8px 20px rgba(0,0,0,0.15);  
@@ -690,7 +699,9 @@
     .price-card ul {  
         list-style: none;  
         padding: 0;  
-        margin: 20px 0;  
+        margin: 20px auto;  
+        max-width: 350px;
+        text-align: center;
     }  
 
     .price-card li {  
@@ -793,21 +804,7 @@
     display: block;
 }
 
-/* Pricing section */
-.pricing {
-    width: 100%;
-    max-width: 1000px;
-    margin: 50px auto;
-    box-sizing: border-box;
-}
 
-/* Pricing cards */
-.price-card {
-    width: 100%;
-    max-width: 500px;
-    margin: 30px auto;
-    box-sizing: border-box;
-    }
         
 </style>
 
