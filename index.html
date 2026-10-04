@@ -724,21 +724,29 @@
         box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);  
     }  
 
-    #projects {
+#projects {
+    width: 100%;
     padding: 30px 10px !important;
+    margin: 30px auto !important;
+    box-sizing: border-box;
 }
 
 #projects > div {
+    display: grid !important;
     grid-template-columns: 1fr !important;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto !important;
+    gap: 25px;
 }
 
 #projects > div > div {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
-}
-
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    }
+        
     .popular {  
         display: inline-block;  
         background-color: #D4AF37;  
